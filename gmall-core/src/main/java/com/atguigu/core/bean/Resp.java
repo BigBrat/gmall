@@ -38,9 +38,9 @@ public class Resp<T> {
     }
 
     public static<T> Resp<T> fail(T data){
-        Resp<T> resp = new Resp<T>();
+        Resp<T> resp = new Resp<T>(data);
         resp.setCode(1);//操作失败
-        resp.setMsg(data);
+        resp.setMsg("fail");
         return resp;
     }
 

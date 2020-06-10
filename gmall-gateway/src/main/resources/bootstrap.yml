@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: gmall-gateway
+  cloud:
+    nacos:
+      config:
+        server-addr: 192.168.56.105:8848
